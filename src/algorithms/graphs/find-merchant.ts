@@ -1,6 +1,7 @@
 import { IFriends } from '@/data/graphs/types';
 
 export const findMerchant = (graph: IFriends, merchant: string) => {
+  if(Object.keys(graph).length === 0) return null;
   let search_queue = [...graph['you']];
   const searched = new Set();
 
