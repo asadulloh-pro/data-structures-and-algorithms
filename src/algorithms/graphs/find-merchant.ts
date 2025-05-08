@@ -1,4 +1,4 @@
-import { IFriends } from '@/data/graphs/types';
+import { IFriends } from '@/types';
 
 export const findMerchant = (graph: IFriends, merchant: string) => {
   if(Object.keys(graph).length === 0) return null;
